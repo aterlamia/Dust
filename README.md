@@ -1,2 +1,2 @@
 # Dust
-Dust
+A little playground
