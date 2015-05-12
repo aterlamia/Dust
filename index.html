@@ -7,34 +7,15 @@
             padding: 0px;
         }
     </style>
-    <script src="dust.js"></script>
-    <script src="cloud.js"></script>
-    <script src="spec.js"></script>
-    <script src="math.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="initium.js"></script>
+    <script src="initium.imageloader.js"></script>
+    <script src="initium.math.js"></script>
+    <script src="initium.objects.js"></script>
+    <script src="initium.renderer.js"></script>
+    <script src="example.loader.js"></script>
 </head>
 <body>
-<canvas id="myCanvas" style="border:1px solid black"></canvas>
-<script>
-    DUST.canvas = document.getElementById('myCanvas');
-    DUST.context = DUST.canvas.getContext('2d');
-
-    var specs = [];
-
-    specs.push(new DUST.SPEC(1400, 1400, 20));
-    specs.push(new DUST.SPEC(1400, 2000, 12));
-    specs.push(new DUST.SPEC(1600, 2000, 10));
-
-    specs[1].VELOCITY.X = 45;
-    specs[1].VELOCITY.Y = 0;
-
-    specs[1].VELOCITY.X = 12;
-    specs[1].VELOCITY.Y = 0;
-
-    DUST.MAIN.logEnabled = false;
-
-    DUST.MAIN.init(specs);
-    DUST.MAIN.draw();
-    DUST.MAIN.update();
-</script>
+<canvas id="example1" style="border:1px solid black"></canvas>
 </body>
 </html>
