@@ -1,0 +1,9 @@
+web:
+  build: .
+  volumes:
+    - ./app:/app/
+  ports:
+    - 80:80
+    - 9001:9001
+    - 35729:35729
+  tty: true
